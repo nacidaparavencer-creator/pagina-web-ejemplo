@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rustic Spoon | Restaurante</title>
+  <meta name="description" content="Sitio web llamativo y elegante para restaurante con ambiente cálido, menú destacado y reservas." />
+  <!-- Fuentes desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Enlace al archivo CSS externo -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="modal.css" />
+  <a href="https://wa.me/59161209706" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" class="whatsapp-link">
+  📱 WhatsApp
+</a>
+
+</head>
+<body>
+  <!-- Encabezado con logo y menú de navegación -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#inicio" class="brand" aria-label="Inicio Rustic Spoon">
+        <strong>Rustic Spoon</strong>
+        <span>Cocina de autor</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+      </button>
+
+      <nav id="mainNav" class="nav" aria-label="Navegación principal">
+        <a class="active" href="#inicio">Inicio</a>
+        <a href="#historia">Nuestra historia</a>
+        <a href="#menu">Menú</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#reservas">Reservas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección de bienvenida o inicio -->
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h1>Experimenta el arte del sabor</h1>
+        <p>Descubre platos de temporada, elaborados con pasión en un ambiente acogedor.</p>
+        <a href="#reservas" class="btn btn-primary">Reservar mesa</a>
+        <a href="#menu" class="btn btn-secondary">Explorar menú</a>
+      </div>
+    </section>
+
+    <!-- Sección Nuestra historia -->
+    <section id="historia" class="section">
+      <div class="container">
+        <h2>Nuestra historia</h2>
+        <p>Inspirados en la tradición y la cocina artesanal, ofrecemos una experiencia culinaria única.</p>
+      </div>
+    </section>
+
+    <!-- Sección Menú -->
+    <section id="menu" class="section">
+      <div class="container">
+        <h2>Menú destacado</h2>
+        <ul>
+          <li><strong>Pasta Signature:</strong> Pasta artesanal con salsa cremosa de hongos y parmesano.</li>
+          <li><strong>Pizza al Horno de Leña:</strong> Masa fermentada lentamente con ingredientes frescos.</li>
+          <li><strong>Lomo con reducción de vino:</strong> Corte jugoso con puré rústico y vegetales salteados.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sección Experiencia -->
+    <section id="experiencia" class="section">
+      <div class="container">
+        <h2>Experiencia</h2>
+        <p>Más que cenar, vivir una noche inolvidable con ambiente cálido y atención personalizada.</p>
+      </div>
+    </section>
+
+    <!-- Sección Reservas -->
+    <section id="reservas" class="section">
+      <div class="container">
+        <h2>Reservas</h2>
+        <div class="whatsapp-reserva">
+  <p>¿Prefieres reservar por WhatsApp? <a href="https://wa.me/59161209706" target="_blank" rel="noopener">Escríbenos aquí</a></p>
+</div>
+
+        <form id="formulario-reserva">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required />
+
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" required />
+
+          <label for="personas">Número de personas:</label>
+          <select id="personas" name="personas" required>
+            <option value="">Selecciona</option>
+            <option value="2">2 personas</option>
+            <option value="3">3 personas</option>
+            <option value="4">4 personas</option>
+            <option value="5">5 personas</option>
+            <option value="6">6 o más personas</option>
+          </select>
+
+          <label for="mensaje">Mensaje (opcional):</label>
+          <textarea id="mensaje" name="mensaje" placeholder="¿Celebras algo especial?"></textarea>
+
+          <button type="submit" class="btn btn-primary">Enviar reserva</button>
+        </form>
+      </div>
+    </section>
+          <button type="submit" class="btn btn-primary">Enviar reserva</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <a href="https://wa.me/59161209706" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="40" height="40" />
+</a>
+
+<!-- Modal ventana emergente -->
+<div id="modal-info" class="modal">
+  <div class="modal-contenido">
+    <button id="cerrar-modal" class="cerrar" aria-label="Cerrar ventana emergente">&times;</button>
+    <h2>Información</h2>
+    <p>Esta página web es un ejemplo para crear páginas web a un costo.</p>
+  </div>
+</div>
+
+
+  
+
+
+  <script src="modal.js"></script>
+
+
+</body>
+</html>
